@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body{
+    background-color: black;
+    display:grid;
+    grid-template-columns: 10vh 1fr 1fr 10vh;
+    grid-template-rows: 12vh 10vh 1fr 10vh;
+    grid-template-areas: 
+    ". header header ."
+    ". nav nav ."
+    ". main main ."
+    ". footer footer ."
+    ;
+}
+header{
+    grid-area: header;
+    background-color: #a52a2a;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    margin: 0px;
+    font-family: myFirstfont, sans-serif;
+}
+h2{
+    text-align: center;
+}
+nav{
+    grid-area: nav;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+}
+ol{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+main{
+    grid-area: main;
+    background-color: deepskyblue;
+    font-family: myFirstfont, sans-serif;
+}
+a:link{
+    color:green;
+}
+a:visited{
+    color: gold;
+}
+img{
+    border-radius: 2%;
+    max-width: 400px;
+    height: 1fr;
+    margin-right: 2em;
+}
+iframe{
+    width:500px;
+    height:250px;
+}
+.transf{
+    -ms-transform: scaleY(1.5);
+    transform: scaleY(1.5);
+}
+footer>div{
+    width: 85px;
+    height: 100px;
+    background-color: hsl(0, 100%, 50%);
+    transition: width 2s;
+}
+div:hover{
+    width:200px;
+}
+footer{
+    grid-area: footer;
+    height:50ex
+}
+input{
+    margin-bottom: 1em;
+    margin-left: 10px;
+}
+label{
+    margin-left: 5px;
+}
+table{
+    margin: 50px;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+    vertical-align: baseline;
+}
+tr:nth-child(odd){
+    background-color: rgb(173 ,255 ,47);
+}
+table tr.tbl{
+    background-color: deepskyblue;
+}
+.Class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.right{
+    text-align: left;
+}
+@font-face{
+    font-family: myFistFont;
+    src: url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+}
