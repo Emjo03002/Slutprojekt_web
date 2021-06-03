@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 body{
-    background-color: black;
+    background-color: #2A2D40;
     display:grid;
     grid-template-columns: 10vh 1fr 1fr 10vh;
     grid-template-rows: 12vh 10vh 1fr 10vh;
@@ -14,16 +14,18 @@ body{
 }
 header{
     grid-area: header;
-    background-color: #a52a2a;
+    background-color: #3B3659;
 }
 h1{
     text-align: center;
     font-size: 100px;
     margin: 0px;
     font-family: myFirstfont, sans-serif;
+    color:#7BA65D   ;
 }
 h2{
     text-align: center;
+    color: #568C6D;
 }
 nav{
     grid-area: nav;
@@ -38,18 +40,18 @@ ol{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    color: #568C6D;
 }
 main{
     grid-area: main;
-    background-color: deepskyblue;
+    background-color: #3B3659;
     font-family: myFirstfont, sans-serif;
 }
 a:link{
-    color:green;
+    color:#568C6D;
 }
 a:visited{
-    color: gold;
+    color: #568C6D;
 }
 img{
     border-radius: 2%;
@@ -68,8 +70,9 @@ iframe{
 footer>div{
     width: 85px;
     height: 100px;
-    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(95.3,29.1%,50.8%);
     transition: width 2s;
+    color: #2A2D40;
 }
 div:hover{
     width:200px;
@@ -84,9 +87,11 @@ input{
 }
 label{
     margin-left: 5px;
+    color: #568C6D;
 }
 table{
     margin: 50px;
+    color: black;
 }
 table, th, td{
     border: 1px solid black;
@@ -95,10 +100,13 @@ table, th, td{
     vertical-align: baseline;
 }
 tr:nth-child(odd){
-    background-color: rgb(173 ,255 ,47);
+    background-color: rgb(0,191,255);
+}
+tr:nth-child(even){
+    background-color: lightblue;
 }
 table tr.tbl{
-    background-color: deepskyblue;
+    background-color: lightblue;
 }
 .Class{
     display: grid;
@@ -111,4 +119,12 @@ table tr.tbl{
 @font-face{
     font-family: myFistFont;
     src: url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+}
+@media only screen and (max-width: 800px){
+    body{
+        background-color: #011C40;
+    }
+    h1{
+        color: #07DBF2;
+    }
 }
