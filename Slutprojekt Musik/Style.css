@@ -1,29 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');/*import url importerar en font till programet*/
 
-body{
-    background-color: #2A2D40;
-    display:grid;
-    grid-template-columns: 10vh 1fr 1fr 10vh;
-    grid-template-rows: 12vh 10vh 1fr 10vh;
-    grid-template-areas: 
+body{ /*typselektor för body*/
+    background-color: #2A2D40;/*ändrar backgrundsfärgen till en färg med hexa decimal*/
+    display:grid; /*vissar grid*/
+    grid-template-columns: 10vh 1fr 1fr 10vh; /*skappar columner till griden */
+    grid-template-rows: 12vh 10vh 1fr 10vh; /*skappar rader till griden*/
+    grid-template-areas: /*Väljer vad som ska finnas i varje fält*/
     ". header header ."
     ". nav nav ."
     ". main main ."
-    ". footer footer ."
-    ;
+    ". footer footer .";
 }
-header{
-    grid-area: header;
+header{ /*typselektor header*/
+    grid-area: header; /*Funkar som en variabel säger vilket element i grid det är*/
     background-color: #3B3659;
 }
-h1{
-    text-align: center;
-    font-size: 100px;
-    margin: 0px;
-    font-family: myFirstfont, sans-serif;
-    color:#7BA65D   ;
+h1{ /*h1*/
+    text-align: center; /*text i mitten*/
+    font-size: 100px; /*storlek på texten*/
+    margin: 0px; /*margin 0px inget avstånd till andra element*/
+    font-family: myFirstfont, sans-serif; /*vilken font som ska användas med en font stack*/
+    color:#7BA65D; /*färg på texten*/
 }
-h2{
+h2{ /*h2*/
     text-align: center;
     color: #568C6D;
 }
@@ -34,7 +33,7 @@ ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    list-style-type: none;
+    list-style-type: none; /*inga prikar på listan*/
 }
 ol{
     display: grid;
@@ -47,43 +46,43 @@ main{
     background-color: #3B3659;
     font-family: myFirstfont, sans-serif;
 }
-a:link{
+a:link{ /*oklickad länk*/
     color:#568C6D;
 }
-a:visited{
+a:visited{ /*klickad länk*/
     color: #568C6D;
 }
 img{
-    border-radius: 2%;
-    max-width: 400px;
-    height: 1fr;
-    margin-right: 2em;
+    border-radius: 2%; /*rundade hörn 2%*/
+    max-width: 400px; /*max width 400px (bilden kan inte bli större än 400px bredd)*/
+    height: 1fr; /*den är så stor som den måste vara*/
+    margin-right: 2em; /*marginal till höger 2em */
 }
 iframe{
-    width:500px;
-    height:250px;
+    width:500px; /*bredd*/
+    height:250px; /*höjd*/
 }
-.transf{
-    -ms-transform: scaleY(1.5);
-    transform: scaleY(1.5);
+.transf{ /*Klass selektor*/
+    -ms-transform: scaleY(1.5); /*gör skalan 1.5 på höjden*/
+    transform: scaleY(1.5); /*gör skalan i y led 1.5*/
 }
-footer>div{
-    width: 85px;
+footer>div{ /*Barn selektor (div derekt i footer)*/
+    width: 85px; 
     height: 100px;
     background-color: hsl(95.3,29.1%,50.8%);
-    transition: width 2s;
+    transition: width 2s; /*transition i breed över två sec*/
     color: #2A2D40;
 }
-div:hover{
-    width:200px;
-}
-footer{
+div:hover{ /*håll över div*/
+    width:200px; /*breed 200px*/
+} 
+footer{ /*footer*/
     grid-area: footer;
     height:50ex
 }
-input{
-    margin-bottom: 1em;
-    margin-left: 10px;
+input{ 
+    margin-bottom: 1em; /*marginal under 1em*/
+    margin-left: 10px; /*marginal vänster 10px*/
 }
 label{
     margin-left: 5px;
@@ -93,34 +92,34 @@ table{
     margin: 50px;
     color: black;
 }
-table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 3px;
-    vertical-align: baseline;
+table, th, td{ /*grupp selektor*/
+    border: 1px solid black; /*border 1px tjock svart*/
+    border-collapse: collapse; /*boder collapse så att det inte blir dubbla linjer*/
+    padding: 3px; /*3 px mellan linjer och text*/
+    vertical-align: baseline; /*texten följer mitt linjen*/
 }
-tr:nth-child(odd){
+tr:nth-child(odd){ /*varanan tr har backgrunds färg */
     background-color: rgb(0,191,255);
 }
-tr:nth-child(even){
+tr:nth-child(even){ /*varanan tr har en annan backgrunds färg*/
     background-color: lightblue;
 }
-table tr.tbl{
+table tr.tbl{ /*en klass på en avkomlings selektor*/
     background-color: lightblue;
 }
-.Class{
+.Class{ /*klass selektor med en grid*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
-.right{
+.left{ /*flyttar texten till vänster*/
     text-align: left;
 }
-@font-face{
+@font-face{ /*Skappar en variabel för en font*/
     font-family: myFistFont;
     src: url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px){ /*Om skärmen är mindre än 800 px på bredden så ändras färgerna*/
     body{
         background-color: #011C40;
     }
