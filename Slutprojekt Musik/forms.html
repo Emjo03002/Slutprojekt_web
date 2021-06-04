@@ -19,48 +19,48 @@
             </ul>
         </nav>
         <main>
-            <h2>Formulär</h2>
-            <form action="Index.html" method="get">
-                <label for="fnamn">Namn</label><br>
-                <input type="text" id="fnamn" name="fnamn"><br>
-                <label for="passw">Lösenord</label><br>
+            <h2>Formulär</h2> <!--h2 finns under h1 och får användas fler än en gång-->
+            <form action="Index.html" method="get"> <!--formulär, du kommer till index när du klickar submit och inforn skrivs i urlen-->
+                <label for="fnamn">Namn</label><br> <!--label till för namn ska finnas till allt utom submit-->
+                <input type="text" id="fnamn" name="fnamn"><br> <!--input fält för text (ditt för namn)-->
+                <label for="passw">Lösenord</label><br> <!--Lössenord-->
                 <input type="password" id="passw" name="passw"><br>
 
-                <fieldset >
-                    <legend>Kön</legend>
-                    <input type="radio" id="man" name="kon" value="man" required checked>
+                <fieldset > <!--rammar in valet av kön-->
+                    <legend>Kön</legend> <!--beskriver vad som finns i ramen -->
+                    <input type="radio" id="man" name="kon" value="man" required checked> <!--radio knapp man icheckad och required-->
                     <label for="man">Man</label><br>
-                    <input type="radio" id="kvinna" name="kon" value="kvinna" required>
+                    <input type="radio" id="kvinna" name="kon" value="kvinna" required> <!--radio knapp kvinna -->
                     <label for="kvinna">Kvinna</label><br>
-                    <input type="radio" id="Annat" name="kon" value="Annat" required>
+                    <input type="radio" id="Annat" name="kon" value="Annat" required> <!--radio knapp annat-->
                     <label for="Annat">Annat</label><br>
                 </fieldset>
 
-                <label for="email">Epost</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <label for="email">Epost</label><br> <!--Epost-->
+                <input type="email" id="email" name="email" required><br> <!--br byter rad-->
 
-                <label for="farg">Välj din favorit färg</label>
+                <label for="farg">Välj din favorit färg</label> <!--färg-->
                 <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
 
-                <label for="rock">Rock</label><br>
+                <label for="rock">Rock</label><br> <!--checkbox musik genrer (Rock)-->
                 <input type="checkbox" id="rock" name="rock" value="Rock"><br>
-                <label for="pop">Pop</label><br>
+                <label for="pop">Pop</label><br> <!--Pop-->
                 <input type="checkbox" id="pop" name="pop" value="Pop"><br>
-                <label for="rap">Rap</label><br>
+                <label for="rap">Rap</label><br> <!--Rap-->
                 <input type="checkbox" id="rap" name="rap" value="Rap"><br>
-                <label for="klassisk">Klassisk</label><br>
+                <label for="klassisk">Klassisk</label><br> <!--Klassisk-->
                 <input type="checkbox" id="klassisk" name="klassisk" value="Klassisk"><br>
 
-                <label for="låt">Välj den bästa låten</label>
-                <select name="artister" id="artister">
-                    <option value="aito">astronaut in the ocean</option>
+                <label for="låt">Välj den bästa låten</label><!--låtar-->
+                <select name="artister" id="artister"> <!--select val i en rull meny.-->
+                    <option value="aito">astronaut in the ocean</option> <!--Ett val i menyn-->
                     <option value="gfy">Good 4 u</option>
                     <option value="kmm" selected>Kiss Me more</option>
                 </select><br>
                 <br>
-                <label for="favoL">Favorit artister</label><br>
+                <label for="favoL">Favorit artister</label><br> <!--Text ruta där du ska skriva dina favorit artister-->
                 <textarea name="Message" id="favoL" cols="30" rows="10" placeholder="Avicii, Blackbear och Machine Gun Kelly"></textarea><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit"> <!--Submit knapp lämnar in formuläret-->
                 
             </form>
         </main>

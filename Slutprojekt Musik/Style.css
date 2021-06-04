@@ -26,6 +26,12 @@ h2{ /*h2*/
     text-align: center;
     color: #568C6D;
 }
+p{
+    color: #568C6D;
+}
+figcaption{
+    color: #568C6D;
+}
 nav{
     grid-area: nav;
 }
@@ -57,6 +63,10 @@ img{
     max-width: 400px; /*max width 400px (bilden kan inte bli större än 400px bredd)*/
     height: 1fr; /*den är så stor som den måste vara*/
     margin-right: 2em; /*marginal till höger 2em */
+}
+svg{
+    width: 100px;
+    height: 100px;
 }
 iframe{
     width:500px; /*bredd*/
