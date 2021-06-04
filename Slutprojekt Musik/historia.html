@@ -2,7 +2,7 @@
 <html lang="sv">
     <head>
             <meta charset="utf-8">
-            <title></title>
+            <title>Musiksida</title>
             <link href="Style.css" rel="stylesheet">
     </head>
     <body>
@@ -39,14 +39,14 @@
             <ol start=1> <!--Orderd list som börjar på 1-->
                 <li id="theB"> <!--li med en id selektor kan bara användas en gång-->
                     The Beatles <br> 
-                    <img src="Bilder\The Beatles.png" alt="The Beatles">
+                    <img src="Bilder/The_Beatles.png" alt="The Beatles">
                     <audio controls>
-                        <source src="Ljud\here comes the sun.mp3" type="audio/mpeg">
+                        <source src="Ljud/here_comes_the_sun.mp3" type="audio/mpeg">
                     </audio>
                 </li>
                 <li id="bobD">
                     Bob Dylan <br> 
-                    <img src="Bilder\Bob Dylan.png" alt="Bob Dylan"><br>
+                    <img src="Bilder/Bob_Dylan.png" alt="Bob Dylan"><br>
                     <dl> <!--Description list-->
                         <dt>Född</dt> <!--Term som ska beskrivas-->
                         <dd>24maj 1941</dd> <!--beskrivning av termen-->
@@ -58,13 +58,15 @@
                 </li>
                 <li id="elvisP">
                     Elvis Presley <br>
-                    <img src="Bilder\Elvis.png" alt="Elvis Presly">
+                    <img src="Bilder/Elvis.png" alt="Elvis Presly">
                     <!--iframe youtube video-->
                     <iframe src="https://www.youtube.com/embed/kLNu34iDl4M" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </li>
-                <div class="transf" id="theRS">
-                    <li>The Rolling Stones <br> <img src="Bilder\The Rolling Stones.jpg" alt="The Rolling Stones"></li>
-                </div>                
+                
+                <li class="transf" id="theRS">
+                    The Rolling Stones <br> 
+                    <img src="Bilder/The_Rolling_Stones.jpg" alt="The Rolling Stones">
+                </li>               
             </ol>
         </main>
         <footer>

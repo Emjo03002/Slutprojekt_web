@@ -61,7 +61,6 @@ a:visited{ /*klickad länk*/
 img{
     border-radius: 2%; /*rundade hörn 2%*/
     max-width: 400px; /*max width 400px (bilden kan inte bli större än 400px bredd)*/
-    height: 1fr; /*den är så stor som den måste vara*/
     margin-right: 2em; /*marginal till höger 2em */
 }
 svg{
