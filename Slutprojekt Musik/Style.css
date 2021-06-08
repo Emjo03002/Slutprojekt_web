@@ -87,7 +87,7 @@ div:hover{ /*håll över div*/
 } 
 footer{ /*footer*/
     grid-area: footer;
-    height:50ex
+    height:50ex;
 }
 input{ 
     margin-bottom: 1em; /*marginal under 1em*/
